@@ -1,0 +1,11 @@
+version: 0.1
+log:
+  fields:
+    service: registry
+storage:
+  filesystem:
+    rootdirectory: /var/lib/registry
+http:
+  tls:
+    certificate: /certs/domain.crt
+    key: /certs/domain.key

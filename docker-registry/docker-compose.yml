@@ -1,0 +1,10 @@
+services:
+    registry:
+        ports:
+            - '5000:5000'
+        restart: always
+        container_name: registry
+        volumes:
+            - './certs:/certs'
+            - './config.yml:/etc/docker/registry/config.yml'
+        image: 'registry:2'
